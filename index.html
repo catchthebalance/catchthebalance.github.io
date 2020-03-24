@@ -7,6 +7,11 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        //Cookie Consent
+		<link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
+		<script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+		<script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},"button":{"background":"#555555","text":"#ffffff"}},"position":"top","border":"thin","transparency":"15"})});</script>
         
         <!-- COMMON TAGS -->
         <meta charset="utf-8">
@@ -35,6 +40,17 @@
         <meta name="twitter:description" content="In a world where people use a virus, sickness and death to capitalise on or add discounts to their online training I'm releasing a months handstand programme absolutely for free.">
         <meta name="twitter:image" content="https://catchthebalance.com/img/cover.jpg">
         <meta name="twitter:card" content="https://catchthebalance.com/img/cover.jpg">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161734039-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-161734039-1');
+        </script>
+
     </head>
     <body>
         <div id="content-wrapper">
@@ -45,7 +61,9 @@
             </header>
 
             <section>
-                <a class="call-to-action" href="content/todo.pdf">
+                <a class="call-to-action" 
+                    href="content/todo.pdf"
+                    onclick="var that=this;_gaq.push(['_trackEvent','Download','PDF',this.href]);setTimeout(function(){location.href=that.href;},200);return false;">
                     Download free Program
                 </a>
             </section>
