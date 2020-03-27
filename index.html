@@ -7,11 +7,6 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-        <!-- Cookie Consent -->
-		<link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
-		<script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
-		<script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},"button":{"background":"#555555","text":"#ffffff"}},"position":"top","border":"thin","transparency":"15"})});</script>
         
         <!-- COMMON TAGS -->
         <meta charset="utf-8">
@@ -41,6 +36,11 @@
         <meta name="twitter:image" content="https://www.catchthebalance.com/img/cover.jpg">
         <meta name="twitter:card" content="https://www.catchthebalance.com/img/cover.jpg">
 
+        <!-- Cookie Consent -->
+        <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
+        <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
+        <script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},"button":{"background":"#555555","text":"#ffffff"}},"position":"top","border":"thin","transparency":"15"})});</script>
+        <script async src="./js/ga_events.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161734039-1"></script>
         <script>
@@ -61,7 +61,8 @@
             </header>
 
             <section>
-                <a class="call-to-action" 
+                <a id="Download"
+                    class="call-to-action" 
                     href="content/JonathanLast_beginner_handstand_programme.pdf"
                     onclick="gtag('event','download',{'event_category':'pdf','event_label':'PDF Download'});"
                     download>
@@ -71,23 +72,23 @@
 
             <footer>
                 <ul class="footer-links">
-                    <li class="insta">
-                        <a href="mailto:contact@catchthebalance.com" 
+                    <li>
+                        <a id="Email"
+                            href="mailto:contact@catchthebalance.com" 
                             target="_blank" 
                             title="Email me"
-                            onclick="gtag('event','email',{'event_category':'social','event_label':'Email'});">
                             <i class="fa fa-envelope"></i>
                         </a>
-                        <a href="https://www.instagram.com/Jonathan_Last/" 
+                        <a id="Insta"
+                            href="https://www.instagram.com/Jonathan_Last/" 
                             target="_blank" 
                             title="Instagram"
-                            onclick="gtag('event','instagram',{'event_category':'social','event_label':'Instagram'});">
                             <i class="fa fa-instagram"></i>
                         </a>
-                        <a href="https://www.youtube.com/user/JonnyOxtricks" 
+                        <a id="Youtube"
+                            href="https://www.youtube.com/user/JonnyOxtricks" 
                             target="_blank" 
                             title="YouTube"
-                            onclick="gtag('event','youtube',{'event_category':'social','event_label':'Youtube'});">
                             <i class="fa fa-youtube"></i>
                         </a>
                     </li>
