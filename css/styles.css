@@ -63,19 +63,32 @@ h1 {
     margin: 0;
 }
 
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.item {
+    align-items: center;
+    display: flex;
+}
+
 .call-to-action {
     background-color: rgb(0,0,0);
     color: #ffffff;
     padding: 20px;
     text-transform: uppercase;
     max-width: 200px;
-    display: inline-block;
-    margin: 40px 0;
+    margin: 40px 10px;
     letter-spacing: 0.5px;
     line-height: 1.5em;
     font-size: 16px;
     opacity: 0.8;
     transition: 0.3s;
+    align-items: center;
+    display: flex;
 }
 
 .call-to-action:hover,
