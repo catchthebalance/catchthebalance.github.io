@@ -70,6 +70,11 @@ h1 {
     align-items: stretch;
 }
 
+.padded-v {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .item {
     align-items: center;
     display: flex;
@@ -81,7 +86,7 @@ h1 {
     padding: 20px;
     text-transform: uppercase;
     max-width: 200px;
-    margin: 40px 10px;
+    margin: 10px;
     letter-spacing: 0.5px;
     line-height: 1.5em;
     font-size: 16px;
@@ -89,6 +94,15 @@ h1 {
     transition: 0.3s;
     align-items: center;
     display: flex;
+    box-shadow: 0 0 8px 2px #333333;
+}
+
+.call-to-action.beginner{
+    background-color: rgb(141 108 169);
+}
+
+.call-to-action.intermediate{
+    background-color: #442664;
 }
 
 .call-to-action:hover,
@@ -96,6 +110,7 @@ h1 {
 .call-to-action:focus
  {
     opacity:0.95;
+    box-shadow: 0 0 8px 2px #000000;
 }
 
 ul.footer-links {
