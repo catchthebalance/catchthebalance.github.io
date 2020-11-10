@@ -40,7 +40,6 @@
         <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
         <script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script>
         <script>window.addEventListener("load", function(){window.wpcc.init({"colors":{"popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},"button":{"background":"#555555","text":"#ffffff"}},"position":"top","border":"thin","transparency":"15"})});</script>
-        <script async src="./js/ga_events.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161734039-1"></script>
         <script>
@@ -66,7 +65,7 @@
                         class="call-to-action beginner" 
                         href="content/JonathanLast_beginner_handstand_programme.pdf"
                         target="_blank"
-                        onclick="gtag('event','download',{'event_category':'pdf_beginner','event_label':'Beginner PDF Download'});"
+                        onclick="gtag('event','pdf_beginner',{'event_category':'download','event_label':'Beginner PDF Download'});"
                         download>
                         Free Beginners Handstand Program
                     </a>
@@ -74,7 +73,7 @@
                     class="call-to-action intermediate" 
                     href="content/JonathanLast_intermediate_handstand_programme.pdf"
                     target="_blank"
-                    onclick="gtag('event','download',{'event_category':'pdf_intermediate','event_label':'Intermediate PDF Download'});"
+                    onclick="gtag('event','pdf_intermediate',{'event_category':'download','event_label':'Intermediate PDF Download'});"
                     download>
                     Free Intermediate Handstand Program
                 </a>
@@ -88,18 +87,21 @@
                             href="mailto:contact@catchthebalance.com" 
                             target="_blank" 
                             title="Email me"
+                            onclick="gtag('event','email',{'event_category':'social','event_label':'Email'});"
                             <i class="fa fa-envelope"></i>
                         </a>
                         <a id="Insta"
                             href="https://www.instagram.com/Jonathan_Last/" 
                             target="_blank" 
                             title="Instagram"
+                            onclick="gtag('event','instagram',{'event_category':'social','event_label':'Instagram'});"
                             <i class="fa fa-instagram"></i>
                         </a>
                         <a id="Youtube"
                             href="https://www.youtube.com/user/JonnyOxtricks" 
                             target="_blank" 
                             title="YouTube"
+                            onclick="gtag('event','youtube',{'event_category':'social','event_label':'Youtube'});"
                             <i class="fa fa-youtube"></i>
                         </a>
                     </li>
